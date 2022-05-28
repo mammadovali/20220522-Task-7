@@ -1,0 +1,66 @@
+.contact-container {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__contact-wrapper {
+    width: 100%;
+    padding: 12px 24px !important;
+
+    &__header {
+      @include headerStyle(36px);
+      font-family: "Times New Roman", Times, serif;
+      margin: 10px 0;
+    }
+
+    &__we-offer {
+      font-size: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    &__catering-service {
+      font-size: 18px;
+      color: #607d8b;
+      margin-bottom: 18px;
+      margin-top: 18px;
+    }
+
+    &__you-can {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 18px;
+      margin-top: 18px;
+    }
+
+    &__input {
+      //   display: block;
+      padding: 16px 8px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font: inherit;
+    }
+
+    &__button {
+      color: #000;
+      background-color: #f1f1f1;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      font: inherit;
+
+      &:hover {
+        background-color: #cccccc;
+      }
+    }
+  }
+}
+
+

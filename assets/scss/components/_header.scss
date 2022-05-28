@@ -1,0 +1,49 @@
+.nav_header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  margin-top: 0px;
+  align-items: center;
+  padding: 20px 30px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.a-style {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: black;
+
+  &:hover {
+    background-color: $hover;
+  }
+}
+
+.hamburger {
+  min-width: 500px;
+  max-width: 1600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.le-catering {
+  position: absolute;
+  color: #57585c;
+  bottom: 25px;
+  left: 25px;
+  letter-spacing: 4px;
+  font-size: 36px;
+}
+
+@include underTabletOnly(600px) {
+  .rests {
+    display: none;
+  }
+  .hamburger {
+    width: 100%;
+  }
+}

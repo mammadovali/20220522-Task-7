@@ -1,0 +1,52 @@
+.menu-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+
+  @include underTabletOnly(993px) {
+    flex-wrap: wrap;
+  }
+
+  &__menu-wrapper {
+    padding: 12px 24px !important;
+    width: 49.9%;
+    @include underTabletOnly(993px) {
+      width: 100%;
+    }
+    &__our-menu {
+      margin-bottom: 30px;
+      @include headerStyle(36px);
+      @include flexbox();
+    }
+
+    &__menu-part {
+      padding: 15px;
+      margin-bottom: 15px;
+
+      &__food {
+        @include headerStyle(20px);
+        font-family: "Times New Roman", Times, serif;
+
+        &__food-description {
+          font-size: 15px;
+          color: $gray-in-texts;
+        }
+      }
+    }
+  }
+}
+
+.meal2 {
+  padding: 12px 24px !important;
+  width: 49.9%;
+
+  @include underTabletOnly(993px) {
+    width: 100%;
+  }
+}
+
+.table-setting2 {
+  opacity: 0.7;
+}

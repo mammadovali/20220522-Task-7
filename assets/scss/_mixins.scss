@@ -1,0 +1,18 @@
+@mixin flexbox($alignItems: center, $justifyContent: center) {
+  display: flex;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+@mixin headerStyle($font-size) {
+  font-family: "Playfair Display";
+  font-size: $font-size;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+@mixin underTabletOnly($max-width) {
+  @media only screen and (max-width: $max-width) {
+    @content;
+  }
+}

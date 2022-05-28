@@ -1,0 +1,17 @@
+// Variables
+@import "./variables";
+
+//Reset
+@import "./reset";
+
+//Mixins
+@import "./mixins";
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+
+//Pages
+@import "./pages/about";
+@import "./pages/menu";
+@import "./pages/contact";
